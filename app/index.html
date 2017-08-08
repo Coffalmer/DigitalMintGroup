@@ -12,8 +12,8 @@
         <div class="header__content">
             <img src="img/logo.png" alt="logo">
             <ul>
-                <li><a href="#">Products and Services</a></li>
-                <li><a href="#">Management</a></li>
+                <li><a href="#products">Products and Services</a></li>
+                <li><a href="#management">Management</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="products">
+    <div class="products" id="products">
         <div class="products__content">
             <h1><span>Products</span> and Services</h1>
             <div class="products__list">
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="management">
+    <div class="management" id="management">
         <div class="management__content">
             <h1>Management</h1>
             <p>Leadership includes executives from Bitfury, one of the worldʼs leading Blockchain companies; Certified Forensic Examiners; and the former CEO of one of Japanʼs largest Bitcoin and Blockchain companies.</p>
@@ -113,6 +113,21 @@ between Rogers Wireless, Canada’s largest mobile phone network, and Universal 
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+		var header = $(".header__content");
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 150) {
+				header.addClass("header__content-bg");
+			} else {
+				header.removeClass("header__content-bg");
+			}
+		});
+	    });
+    </script>
 
 </body>
 </html>
