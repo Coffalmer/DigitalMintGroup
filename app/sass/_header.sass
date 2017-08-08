@@ -1,0 +1,38 @@
+.header
+    width: 100%
+    position: fixed
+
+    &__content
+        padding: 0 5%
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: flex-start
+        align-items: center
+
+        img
+            height: 80px
+            padding: 10px 0
+
+        ul
+            list-style-type: none
+
+        li
+            float: left
+            padding: 0 20px
+
+        a
+            color: $blueColor
+            font-weight: 500
+
+        a:after 
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: $blueColor
+            transition: width .3s ease-in-out
+            margin-top: 5px
+        
+        a:hover:after, a:focus:after
+            width: 100%
