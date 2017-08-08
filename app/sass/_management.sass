@@ -1,0 +1,53 @@
+.management
+    background-image: url("../img/pattern.png")
+
+
+    &__content
+        padding: 100px 5%
+        background-color: rgba(255, 255, 255, 0.97)
+
+
+        h1
+            text-align: center
+            margin-bottom: 30px
+
+        p
+            width: 90%
+            padding: 0 5%
+            text-align: center
+            color: $grayColor
+            font-weight: 400
+            font-size: 1.3em
+            
+    
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 80px
+
+        &-item
+            width: 50%
+            margin-bottom: 50px
+
+            h2
+                margin: 0
+                color: $blueColor
+                font-size: 1.5em
+                font-weight: 500
+
+            h3
+                margin: 10px 0
+                font-weight: 400
+                color: $blueColor
+
+            p
+                text-align: left
+                padding: 0
+                width: 90%
+                font-size: 1em
+
+            @media screen and (max-width: 500px)
+                width: 100%
