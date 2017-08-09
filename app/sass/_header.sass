@@ -1,6 +1,6 @@
 .header
     width: 100%
-    position: fixed
+    position: absolute
 
     &__content
         padding: 0 5%
@@ -16,6 +16,7 @@
 
         ul
             list-style-type: none
+            margin: 0
 
         li
             float: left
@@ -24,15 +25,51 @@
         a
             color: $blueColor
             font-weight: 500
+            transition: color 0.3s ease-in-out
+        
+        a:hover
+            color: $orangeColor
 
         a:after 
             display: block
             content: ""
             height: 2px
             width: 0%
-            background-color: $blueColor
-            transition: width .3s ease-in-out
+            background-color: $orangeColor
+            transition: width 0.3s ease-in-out
             margin-top: 5px
         
         a:hover:after, a:focus:after
             width: 100%
+
+        &-bg 
+            background-color: rgba(255, 255, 255, 0.97)
+            position: fixed
+            width: 90%
+            box-shadow: 0 2px 5px rgba(0,0,0,.26)
+            transition: all 0.2s ease-in-out
+
+            img
+                height: 50px
+                
+
+
+.dropdown
+    padding: 10px 5px
+    top: 63px
+    position: absolute
+    display: none
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2)
+    background-color: $whiteColor
+
+    li
+        float: none
+        padding: 5px
+
+.dropdown__scroll
+    top: 48px
+
+
+.header__content li:hover .dropdown
+    display: block
+    

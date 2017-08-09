@@ -1,0 +1,44 @@
+.projects
+    background-image: url("../img/pattern.png")
+    box-shadow: 0 4px 10px rgba(0,0,0,.9)
+
+
+    &__content
+        padding: 100px 5%
+        background-color: rgba(70, 117, 165, 0.97)
+
+        h1
+            color: $whiteColor
+            text-align: center
+            margin-bottom: 50px
+
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        
+
+
+        &-item
+            width: 45%
+            padding: 20px
+            margin-bottom: 5%
+            background-color: $whiteColor
+            border-bottom: 4px solid $orangeColor
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+            transition: box-shadow 0.3s
+
+            h2
+                margin-top: 0
+                color: $blueColor
+                font-weight: 700
+
+            p
+                font-weight: 400
+
+            @media screen and (max-width: 980px)
+                width: 100%
+
+        &-item:hover
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)

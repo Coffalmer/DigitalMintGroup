@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Digital Mint Group</title>
 </head>
 <body>
@@ -12,9 +12,9 @@
         <div class="header__content">
             <img src="img/logo.png" alt="logo">
             <ul>
-                <li><a href="#">Products and Services</a></li>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#products">Products and Services</a></li>
+                <li><a href="#management">Management</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="products">
+    <div class="products" id="products">
         <div class="products__content">
             <h1><span>Products</span> and Services</h1>
             <div class="products__list">
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="management">
+    <div class="management" id="management">
         <div class="management__content">
             <h1>Management</h1>
             <p>Leadership includes executives from Bitfury, one of the worldʼs leading Blockchain companies; Certified Forensic Examiners; and the former CEO of one of Japanʼs largest Bitcoin and Blockchain companies.</p>
@@ -90,29 +90,44 @@ between Rogers Wireless, Canada’s largest mobile phone network, and Universal 
         </div>
     </div>
     
-    <!-- <div class="projects">
+     <div class="projects" id="projects">
         <div class="projects__content">
             <h1>Projects</h1>
             <div class="projects__list">
-                <div class="project__list-item">
+                <div class="projects__list-item">
                     <h2>Medical application</h2>
                     <p>For a Biotech client wishing to store customersʼ DNA information (encrypted) on the Blockchain as a <span>component of their security offering</span></p>
                 </div>
-                <div class="project__list-item">
+                <div class="projects__list-item">
                     <h2>Blockchain software</h2>
                     <p>Providing an exchange for multiple loyalty point currencies/programs on a <span>single platform</span></p>
                 </div>
-                <div class="project__list-item">
+                <div class="projects__list-item">
                     <h2>Supply Chain application</h2>
                     <p>Using smart contracts to facilitate <span>supply chain management</span> for a wholesale cannabis co-op, working with numerous Canadian Licensed Producers</p>
                 </div>
-                <div class="project__list-item">
+                <div class="projects__list-item">
                     <h2>Asset leasing application </h2>
                     <p>For clients wanting to guarantee accuracy of their fleet vehicle lifecycles, including maintenance, repairs etc.</p>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+		var header = $(".header__content");
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 150) {
+				header.addClass("header__content-bg");
+			} else {
+				header.removeClass("header__content-bg");
+			}
+		});
+	    });
+    </script>
 
 </body>
 </html>
