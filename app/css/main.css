@@ -455,7 +455,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f5f9fb;
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -521,3 +521,47 @@ a {
 #terms {
   color: #4675a5;
   margin-top: 20px; }
+
+.soon {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/pattern.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .soon__content {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .soon__content img {
+      width: 30%;
+      margin-bottom: 40px; }
+    .soon__content h1 {
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .soon__content p {
+      color: #5b5d5c;
+      margin-bottom: 3rem; }
+    .soon__content a {
+      color: #4675a5; }
