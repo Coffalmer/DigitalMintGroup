@@ -77,6 +77,9 @@ a {
     .header__content ul {
       list-style-type: none;
       margin: 0; }
+      @media screen and (max-width: 860px) {
+        .header__content ul {
+          display: none; } }
     .header__content li {
       float: left;
       padding: 0 20px; }
@@ -370,7 +373,7 @@ a {
   .investor__content {
     background-color: rgba(255, 255, 255, 0.96);
     width: 40%;
-    padding: 0 5%; }
+    padding: 80px 5%; }
     .investor__content h1 {
       padding-top: 100px;
       text-align: center;
@@ -382,6 +385,7 @@ a {
     @media screen and (max-width: 850px) {
       .investor__content {
         width: 90%;
+        padding: 0 5%;
         background-color: rgba(255, 255, 255, 0.95); } }
     .investor__content-item {
       display: -webkit-box;
@@ -432,4 +436,36 @@ a {
           width: 40%; } }
       @media screen and (max-width: 500px) {
         .investor__content-item a {
-          width: 90%; } }
+          width: 100%; } }
+
+.hire {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 5%; }
+  .hire h2 {
+    color: #5b5d5c;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 1rem 2rem;
+    text-align: center;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    border: 2px solid #5b5d5c; }
