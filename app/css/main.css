@@ -455,11 +455,14 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #f5f9fb;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 5%; }
+  padding: 100px 5%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
   .hire h2 {
     color: #5b5d5c;
     font-weight: 500;
@@ -469,3 +472,52 @@ a {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     border: 2px solid #5b5d5c; }
+
+.contact {
+  padding: 100px 5% 50px 5%; }
+  .contact__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .contact__content img {
+      width: 50%;
+      margin-bottom: 40px; }
+    .contact__content h2 {
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 5px;
+      color: #5b5d5c;
+      font-size: 1.7em; }
+    .contact__content h3 {
+      margin-top: 0;
+      margin-bottom: 40px;
+      font-weight: 300;
+      color: #5b5d5c;
+      font-size: 1.5em; }
+    .contact__content a {
+      color: #5b5d5c; }
+    @media screen and (max-width: 500px) {
+      .contact__content img {
+        width: 100%; } }
+
+#terms {
+  color: #4675a5;
+  margin-top: 20px; }
