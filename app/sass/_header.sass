@@ -1,9 +1,8 @@
 .header
     width: 100%
-    position: absolute
 
     &__content
-        padding: 0 5%
+        padding: 0 10%
         display: flex
         flex-direction: row
         flex-wrap: nowrap
@@ -12,7 +11,7 @@
 
         img
             height: 80px
-            padding: 10px 0
+            padding: 30px 0
 
         ul
             list-style-type: none
@@ -48,18 +47,21 @@
         &-bg 
             background-color: rgba(255, 255, 255, 0.97)
             position: fixed
+            padding: 0 5%
+            z-index: 1
             width: 90%
             box-shadow: 0 2px 5px rgba(0,0,0,.26)
             transition: all 0.2s ease-in-out
 
             img
+                padding: 10px 0
                 height: 50px
                 
 
 
 .dropdown
     padding: 10px 5px
-    top: 63px
+    top: 83px
     position: absolute
     display: none
     box-shadow: 0px 2px 3px rgba(0,0,0,0.2)
