@@ -1,40 +1,81 @@
 .contact
-    padding: 100px 5% 50px 5%
+    width: 90%
+    padding: 80px 5%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    
 
     &__content
+        width: 40%
+        padding: 0 5%
         display: flex
         flex-direction: column
-        flex-wrap: nowrap
+        flex-wrap: wrap
         justify-content: center
-        align-items: center
-        text-align: center
 
         img
-            width: 50%
-            margin-bottom: 40px
+            width: 400px
+            margin: 0 auto
 
         h2
-            font-weight: 500
-            margin-top: 0
-            margin-bottom: 5px
-            color: $grayColor
-            font-size: 1.7em
-
-        h3
-            margin-top: 0
-            margin-bottom: 40px
-            font-weight: 300
-            color: $grayColor
-            font-size: 1.5em
+            color: $blackColor
+            margin-top: 30px
+            text-align: center
 
         a
-            color: $grayColor
+            color: $orangeColor
 
-        @media screen and (max-width: 500px)
-            img
-                width: 100%
-                
+        &-item
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            flex-wrap: nowrap
+            align-items: center
+            align-content: center
+            margin: 10px 0
 
-#terms
-    color: $blueColor
-    margin-top: 20px
+            i
+                width: 2em
+                font-size: 2em
+                line-height: 2em
+                text-align: center
+                border: 2px solid $blueColor
+                color: $blueColor
+                border-radius: 50%
+                background-color: transparent
+                margin-left: 70px
+            
+            h3
+                font-size: 1em
+                line-height: 1.5em
+                color: $blueColor
+                margin: 0 0 0 20px
+
+    &__links
+        width: 40%
+        padding: 0 5%
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+        a
+            margin-bottom: 10px
+            color: #999999
+
+        #hire
+            color: $blueColor
+            font-weight: 500
+            padding: 10px 30px
+            border-radius: 50px
+            border: 2px solid $blueColor
+            margin-bottom: 30px
+            transition: all 0.3s
+
+        #hire:hover
+            color: $whiteColor
+            background-color: $blueColor

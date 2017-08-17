@@ -462,11 +462,10 @@ a {
       background-color: #f7f7f9; }
 
 .investor {
-  background: #0194b5;
-  background: -webkit-gradient(linear, left top, right top, from(#0194b5), to(#00afd2));
-  background: -webkit-linear-gradient(left, #0194b5 0%, #00afd2 100%);
-  background: -o-linear-gradient(left, #0194b5 0%, #00afd2 100%);
-  background: linear-gradient(to right, #0194b5 0%, #00afd2 100%); }
+  background: -webkit-gradient(linear, left top, right top, from(#4675a5), to(#61a3e6));
+  background: -webkit-linear-gradient(left, #4675a5 0%, #61a3e6 100%);
+  background: -o-linear-gradient(left, #4675a5 0%, #61a3e6 100%);
+  background: linear-gradient(to right, #4675a5 0%, #61a3e6 100%); }
   .investor__content {
     padding: 150px 0;
     display: -webkit-box;
@@ -507,46 +506,34 @@ a {
       margin: 20px 10px; }
     .investor__content-item a:hover {
       background-color: #ffffff;
-      color: #00b0d2; }
+      color: #4675a5; }
 
-.hire {
+.contact {
+  width: 90%;
+  padding: 80px 5%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding: 100px 5%;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
-  .hire h2 {
-    color: #f7f7f9;
-    font-weight: 500;
-    font-size: 1.2em;
-    padding: 1rem 2rem;
-    text-align: center;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    border: 2px solid #f7f7f9; }
-
-.contact {
-  padding: 100px 5% 50px 5%; }
+          align-items: center; }
   .contact__content {
+    width: 40%;
+    padding: 0 5%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -556,9 +543,78 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contact__content img {
+      width: 400px;
+      margin: 0 auto; }
+    .contact__content h2 {
+      color: #000000;
+      margin-top: 30px;
+      text-align: center; }
+    .contact__content a {
+      color: #ffa00b; }
+    .contact__content-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center;
+      margin: 10px 0; }
+      .contact__content-item i {
+        width: 2em;
+        font-size: 2em;
+        line-height: 2em;
+        text-align: center;
+        border: 2px solid #4675a5;
+        color: #4675a5;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: transparent;
+        margin-left: 70px; }
+      .contact__content-item h3 {
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #4675a5;
+        margin: 0 0 0 20px; }
+  .contact__links {
+    width: 40%;
+    padding: 0 5%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -566,32 +622,24 @@ a {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    text-align: center; }
-    .contact__content img {
-      width: 50%;
-      margin-bottom: 40px; }
-    .contact__content h2 {
+            align-items: center; }
+    .contact__links a {
+      margin-bottom: 10px;
+      color: #999999; }
+    .contact__links #hire {
+      color: #4675a5;
       font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 5px;
-      color: #f7f7f9;
-      font-size: 1.7em; }
-    .contact__content h3 {
-      margin-top: 0;
-      margin-bottom: 40px;
-      font-weight: 300;
-      color: #f7f7f9;
-      font-size: 1.5em; }
-    .contact__content a {
-      color: #f7f7f9; }
-    @media screen and (max-width: 500px) {
-      .contact__content img {
-        width: 100%; } }
-
-#terms {
-  color: #4675a5;
-  margin-top: 20px; }
+      padding: 10px 30px;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      border: 2px solid #4675a5;
+      margin-bottom: 30px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .contact__links #hire:hover {
+      color: #ffffff;
+      background-color: #4675a5; }
 
 .soon {
   width: 100%;
@@ -604,7 +652,7 @@ a {
           background-size: cover; }
   .soon__content {
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
